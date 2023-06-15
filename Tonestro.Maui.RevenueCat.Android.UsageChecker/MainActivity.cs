@@ -1,4 +1,4 @@
-namespace Xamarin.RevenueCat.Android.UsageChecker;
+namespace Tonestro.Maui.RevenueCat.Android.UsageChecker;
 
 [Activity(Label = "@string/app_name", MainLauncher = true)]
 public class MainActivity : Activity
