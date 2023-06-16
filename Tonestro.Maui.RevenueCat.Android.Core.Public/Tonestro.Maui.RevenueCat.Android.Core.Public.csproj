@@ -1,8 +1,32 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <PropertyGroup>
-    <TargetFramework>net7.0-android</TargetFramework>
-    <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
-    <Nullable>enable</Nullable>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>net7.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>31</SupportedOSPlatformVersion>
+        <Nullable>disable</Nullable>
+        <ImplicitUsings>disable</ImplicitUsings>
+    </PropertyGroup>
+    <PropertyGroup>
+        <IsPackable>true</IsPackable>
+        <PackageId>Tonestro.Maui.RevenueCat.Android.Core.Public</PackageId>
+        <Version>5.3.0.1</Version>
+        <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
+        <Authors>Christian Kapplmüller</Authors>
+        <Company>fun.music IT GmbH</Company>
+        <PackageOutputPath>nugetoutput</PackageOutputPath>
+        <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+    </PropertyGroup>
+    <ItemGroup>
+        <LibraryProjectZip Include="Jars\purchases-core-public-5.3.0.aar" />
+        <JavaSourceJar Include="Jars\purchases-core-public-5.3.0-sources.jar" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime" Version="1.5.20.1" />
+        <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="4.0.0" />
+        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.5.0" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.32.1" />
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Strings\Tonestro.Maui.RevenueCat.Android.Core.Strings.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Utils\Tonestro.Maui.RevenueCat.Android.Core.Utils.csproj" />
+    </ItemGroup>
 </Project>

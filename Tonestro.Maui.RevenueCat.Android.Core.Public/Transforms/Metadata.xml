@@ -1,9 +1,8 @@
 ﻿<metadata>
-  <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
-  -->
+
+  <remove-node
+          path="//field[@final='true' and @name='CREATOR' and @jni-signature='Landroid/os/Parcelable$Creator;' and @static='true' and @type='android.os.Parcelable.Creator']"/>
+
+  <remove-node path="//implements[@name='android.os.Parcelable.Creator']" />
+
 </metadata>
