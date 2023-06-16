@@ -1,25 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
+
 <metadata>
 
-  <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceivePurchaserInfoListener']/method[@name='onError']"
-        name="argsType">ReceivePurchaseInfoErrorEventArgs
-  </attr>
-  <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceivePurchaserInfoListener']/method[@name='onReceived']"
-        name="argsType">ReceivePurchaseInfoReceivedEventArgs
-  </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceivePurchaserInfoListener']/method[@name='onError']"
+        name="argsType">
+        ReceivePurchaseInfoErrorEventArgs
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceivePurchaserInfoListener']/method[@name='onReceived']"
+        name="argsType">
+        ReceivePurchaseInfoReceivedEventArgs
+    </attr>
 
-  <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceiveOfferingsListener']/method[@name='onError']"
-        name="argsType">ReceiveOfferingsErrorEventArgs
-  </attr>
-  <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceiveOfferingsListener']/method[@name='onReceived']"
-        name="argsType">ReceiveOfferingsReceivedEventArgs
-  </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceiveOfferingsListener']/method[@name='onError']"
+        name="argsType">
+        ReceiveOfferingsErrorEventArgs
+    </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='ReceiveOfferingsListener']/method[@name='onReceived']"
+        name="argsType">
+        ReceiveOfferingsReceivedEventArgs
+    </attr>
 
-  <attr path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='UpdatedCustomerInfoListener']/method[@name='onReceived' and count(parameter)=1 and parameter[1][@type='com.revenuecat.purchases.CustomerInfo']]/parameter"
-        name="name">customerInfo
-  </attr>
+    <attr
+        path="/api/package[@name='com.revenuecat.purchases.interfaces']/interface[@name='UpdatedCustomerInfoListener']/method[@name='onReceived' and count(parameter)=1 and parameter[1][@type='com.revenuecat.purchases.CustomerInfo']]/parameter"
+        name="name">
+        customerInfo
+    </attr>
 
-  <remove-node
-          path="/api/package[@name='com.revenuecat.purchases']/class[@name='Purchases']/field[@name='Companion']"/>
+    <remove-node
+        path="/api/package[@name='com.revenuecat.purchases']/class[@name='Purchases']/field[@name='Companion']" />
 
 </metadata>

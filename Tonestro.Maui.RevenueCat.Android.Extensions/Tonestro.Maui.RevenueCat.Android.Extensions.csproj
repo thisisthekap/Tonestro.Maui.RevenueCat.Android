@@ -16,10 +16,11 @@
         <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0"/>
+        <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Public\Tonestro.Maui.RevenueCat.Android.Core.Public.csproj"/>
-        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android\Tonestro.Maui.RevenueCat.Android.csproj"/>
+        <ProjectReference
+            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Public\Tonestro.Maui.RevenueCat.Android.Core.Public.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android\Tonestro.Maui.RevenueCat.Android.csproj" />
     </ItemGroup>
 </Project>

@@ -1,0 +1,10 @@
+Tonestro.Maui.RevenueCat.Android.Core.Strings
+Tonestro.Maui.RevenueCat.Android.Core.Utils
+Tonestro.Maui.RevenueCat.Android.Core.Public
+Tonestro.Maui.RevenueCat.Android.Core.Common
+Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes
+Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity
+Tonestro.Maui.RevenueCat.Android.Store.Google
+Tonestro.Maui.RevenueCat.Android
+Tonestro.Maui.RevenueCat.Android.Store.Amazon
+Tonestro.Maui.RevenueCat.Android.Extensions
