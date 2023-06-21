@@ -21,7 +21,7 @@
         <JavaSourceJar Include="Jars\purchases-core-utils-6.5.0-sources.jar" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21" />
+        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21.1" />
     </ItemGroup>
 </Project>
