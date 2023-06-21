@@ -25,6 +25,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.An
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.UsageChecker", "Tonestro.Maui.RevenueCat.Android.UsageChecker\Tonestro.Maui.RevenueCat.Android.UsageChecker.csproj", "{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kotlin.Parcelize.Runtime", "Kotlin.Parcelize.Runtime\Kotlin.Parcelize.Runtime.csproj", "{8EEB3C60-8D25-4B51-884C-5DDD7440B243}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +80,9 @@ Global
 		{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EEB3C60-8D25-4B51-884C-5DDD7440B243}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EEB3C60-8D25-4B51-884C-5DDD7440B243}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EEB3C60-8D25-4B51-884C-5DDD7440B243}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EEB3C60-8D25-4B51-884C-5DDD7440B243}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -24,4 +24,7 @@
         <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
         <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21.1" />
     </ItemGroup>
+    <ItemGroup>
+      <ProjectReference Include="..\Kotlin.Parcelize.Runtime\Kotlin.Parcelize.Runtime.csproj" />
+    </ItemGroup>
 </Project>
