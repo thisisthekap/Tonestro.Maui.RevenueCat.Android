@@ -10,21 +10,22 @@
         <PackageId>Tonestro.Maui.RevenueCat.Android.Core.Utils</PackageId>
         <Version>6.5.0.1</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
-        <Authors>Christian Kapplmüller</Authors>
+        <Authors>Christian Kapplmüller, Albilaga</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
-        <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+        <PackageLicensePath>..\LICENSE</PackageLicensePath>
     </PropertyGroup>
     <ItemGroup>
-        <JavaDocJar Include="Jars\purchases-core-utils-6.5.0-javadoc.jar" />
         <LibraryProjectZip Include="Jars\purchases-core-utils-6.5.0.aar" />
         <JavaSourceJar Include="Jars\purchases-core-utils-6.5.0-sources.jar" />
     </ItemGroup>
     <ItemGroup>
+        <PackageReference Include="Tonestro.Maui.Kotlin.Parcelize.Runtime" Version="1.6.21.2" />
         <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
         <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21.1" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\Kotlin.Parcelize.Runtime\Kotlin.Parcelize.Runtime.csproj" />
+      <None Remove="Transform\Metadata.xml" />
+      <TransformFile Include="Transform\Metadata.xml" />
     </ItemGroup>
 </Project>
