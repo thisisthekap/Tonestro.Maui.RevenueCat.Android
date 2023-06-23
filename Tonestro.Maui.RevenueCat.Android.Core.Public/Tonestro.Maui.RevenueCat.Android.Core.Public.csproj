@@ -18,12 +18,9 @@
     <ItemGroup>
         <LibraryProjectZip Include="Jars\purchases-core-public-6.5.0.aar" />
         <JavaSourceJar Include="Jars\purchases-core-public-6.5.0-sources.jar" />
-        <JavaDocJar Include="Jars\purchases-core-public-6.5.0-javadoc.jar" />
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="5.1.0.1" />
-        <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21.1" />
     </ItemGroup>
     <ItemGroup>
         <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Strings\Tonestro.Maui.RevenueCat.Android.Core.Strings.csproj" />
