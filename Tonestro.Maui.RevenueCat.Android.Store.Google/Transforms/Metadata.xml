@@ -1,6 +1,6 @@
 ﻿<metadata>
 
-  <attr path="/api/package[@name='com.revenuecat.purchases.google']/class[@name='BillingWrapper']/method[@name='querySkuDetailsAsync' and count(parameter)=4]"
+  <attr path="/api/package[@name='com.revenuecat.purchases.google']/class[@name='BillingWrapper']/method[@name='queryProductDetailsAsync' and count(parameter)=4]"
         name="managedOverride">override
   </attr>
 
