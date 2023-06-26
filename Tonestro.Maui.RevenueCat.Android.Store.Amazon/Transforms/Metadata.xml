@@ -2,7 +2,7 @@
 
     <remove-node path="//implements[@name='android.os.Parcelable.Creator']"/>
     <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]"
-          name="visibility">public
+          name="visibility">protected
     </attr>
     <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]"
           name="managedOverride">override
