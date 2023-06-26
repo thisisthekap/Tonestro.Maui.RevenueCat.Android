@@ -4,25 +4,7 @@
             path="//field[@final='true' and @name='CREATOR' and @jni-signature='Landroid/os/Parcelable$Creator;' and @static='true' and @type='android.os.Parcelable.Creator']"/>
 
     <remove-node path="//implements[@name='android.os.Parcelable.Creator']"/>
-<!--    <add-node path="/api/package[@name='com.revenuecat.purchases.models']/class[@name='GoogleProrationMode']">-->
-<!--        <implements>com.revenuecat.purchases.IProrationMode</implements>-->
-<!--        <field name='Name'>-->
-<!--            <attribute name="managedReturn">string</attribute>-->
-<!--        </field>-->
-<!--    </add-node>-->
-<!--    <add-node path="/api/package[@name='com.revenuecat.purchases.models']/class[@name='GoogleProrationModel']">-->
-<!--        <field name="name" type="string"/>-->
-<!--    </add-node>-->
-    <attr path="/api/package[@name='com.revenuecat.purchases.models']/class[@name='GoogleProrationMode']">
-        <implements>com.revenuecat.purchases.IProrationMode</implements>
-    </attr>
-
-    <attr path="/api/package[@name='com.revenuecat.purchases.models']/class[@name='GoogleProrationMode']/method[@name='getName']">
-        <attribute name="managedReturn">string</attribute>
-    </attr>
-
-    <attr path="/api/package[@name='com.revenuecat.purchases.models']/class[@name='GoogleProrationMode']/method[@name='getName']/parameter[@name='name']">
-        <attribute name="in">true</attribute>
-    </attr>
+    <remove-node path="api/package[@name='com.revenuecat.purchases']/interface[@name='ProrationMode']/method[@name='getName']"/>
+    <remove-node path="/api/package[@name='com.revenuecat.purchases.models']/class[@name='SubscriptionOptions']/implements[@name='java.util.List']" />
 
 </metadata>
