@@ -1,5 +1,22 @@
 ﻿<metadata>
 
-    <remove-node path="//implements[@name='android.os.Parcelable.Creator']" />
-
+    <remove-node path="//implements[@name='android.os.Parcelable.Creator']"/>
+    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]"
+          name="visibility">public
+    </attr>
+    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]"
+          name="managedOverride">override
+    </attr>
+    <!--    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]">-->
+    <!--        <attribute name="override">true</attribute>-->
+    <!--        <attribute name="visibility">public</attribute>-->
+    <!--    </attr>-->
+    <!--    <type fullname="Com.Revenuecat.Purchases.Amazon.AmazonOfferingParser">-->
+    <!--        <method-->
+    <!--                name="FindMatchingProduct"-->
+    <!--                abstract="false"-->
+    <!--                virtual="false"-->
+    <!--                access="public"-->
+    <!--                override="true" />-->
+    <!--    </type>-->
 </metadata>

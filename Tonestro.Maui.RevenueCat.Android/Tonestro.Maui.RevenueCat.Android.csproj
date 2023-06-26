@@ -8,39 +8,30 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.RevenueCat.Android</PackageId>
-        <Version>5.3.0.1</Version>
+        <Version>6.5.0.1</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
-        <Authors>Christian Kapplmüller</Authors>
+        <Authors>Christian Kapplmüller, Albilaga</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
         <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
     </PropertyGroup>
     <ItemGroup>
-        <LibraryProjectZip Include="Jars\purchases-5.3.0.aar" />
-        <JavaSourceJar Include="Jars\purchases-5.3.0-sources.jar" />
+        <LibraryProjectZip Include="Jars\purchases-6.5.0.aar" />
+        <JavaSourceJar Include="Jars\purchases-6.5.0-sources.jar" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime" Version="1.5.20.1" />
-        <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="4.0.0" />
-        <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.3.0.4" />
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.3.1.3" />
-        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.3.1.4" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk7" Version="1.4.32.1" />
+        <PackageReference Include="Tonestro.Maui.Kotlin.Parcelize.Runtime" Version="1.6.21.2" />
+        <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="5.1.0.1" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Process" Version="2.5.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Common" Version="2.5.0" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.5.0" />
     </ItemGroup>
     <ItemGroup>
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Common\Tonestro.Maui.RevenueCat.Android.Core.Common.csproj" />
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity\Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity.csproj" />
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes\Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes.csproj" />
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Public\Tonestro.Maui.RevenueCat.Android.Core.Public.csproj" />
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Strings\Tonestro.Maui.RevenueCat.Android.Core.Strings.csproj" />
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Utils\Tonestro.Maui.RevenueCat.Android.Core.Utils.csproj" />
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Store.Google\Tonestro.Maui.RevenueCat.Android.Store.Google.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Common\Tonestro.Maui.RevenueCat.Android.Core.Common.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity\Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes\Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Strings\Tonestro.Maui.RevenueCat.Android.Core.Strings.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Core.Utils\Tonestro.Maui.RevenueCat.Android.Core.Utils.csproj" />
+        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android.Store.Google\Tonestro.Maui.RevenueCat.Android.Store.Google.csproj" />
     </ItemGroup>
 </Project>
