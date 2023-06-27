@@ -47,7 +47,8 @@ namespace Tonestro.Maui.RevenueCat.Android.Extensions
             Package packageToPurchase, CancellationToken cancellationToken = default)
         {
             var listener = new DelegatingMakePurchaseListener(cancellationToken);
-            purchases.PurchasePackage(activity, packageToPurchase, listener);
+            var purchaseParams = new PurchaseParams(new PurchaseParams.Builder(activity, packageToPurchase));
+            purchases.Purchase(purchaseParams, listener);
             return listener.Task;
         }
 

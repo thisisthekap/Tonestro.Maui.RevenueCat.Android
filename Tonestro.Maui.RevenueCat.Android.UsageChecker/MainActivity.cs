@@ -16,7 +16,7 @@ public class MainActivity : Activity
         // Set our view from the "main" layout resource
         SetContentView(Resource.Layout.activity_main);
 
-        Purchases.DebugLogsEnabled = true;
+        Purchases.LogLevel = LogLevel.Debug;
         Purchases.Configure(new PurchasesConfiguration.Builder(this, "apikey").Build());
         string revenueCatVersion = Purchases.FrameworkVersion;
 
