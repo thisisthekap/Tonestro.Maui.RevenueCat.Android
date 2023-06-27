@@ -21,6 +21,6 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Tonestro.Maui.Kotlin.Parcelize.Runtime" Version="1.6.21.2" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21.1" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.0" />
     </ItemGroup>
 </Project>

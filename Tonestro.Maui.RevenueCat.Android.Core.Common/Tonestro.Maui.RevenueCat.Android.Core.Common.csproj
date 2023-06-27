@@ -21,8 +21,9 @@
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Tonestro.Maui.Kotlin.Parcelize.Runtime" Version="1.6.21.2" />
+        <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.5.0" />
         <PackageReference Include="Xamarin.Google.Crypto.Tink.Android" Version="1.8.0.1" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.6.21.1" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.0" />
         <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.8.0.1" />
         <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="5.1.0.1" />
     </ItemGroup>
