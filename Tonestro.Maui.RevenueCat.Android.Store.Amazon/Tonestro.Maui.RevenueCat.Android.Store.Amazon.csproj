@@ -13,7 +13,7 @@
         <Authors>Christian Kapplmüller, Albilaga</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
-        <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+        <PackageLicensePath>..\LICENSE</PackageLicensePath>
     </PropertyGroup>
     <ItemGroup>
         <LibraryProjectZip Include="Jars\purchases-store-amazon-6.5.0.aar" />

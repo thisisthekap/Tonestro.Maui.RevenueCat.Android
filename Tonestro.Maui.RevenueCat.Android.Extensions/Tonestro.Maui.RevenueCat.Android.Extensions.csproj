@@ -9,15 +9,12 @@
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.RevenueCat.Android.Extensions</PackageId>
         <Description>Contains convenience methods and async extensions for Xamarin.RevenueCat.Android</Description>
-        <Version>5.3.0.1</Version>
-        <Authors>Christian Kapplmüller</Authors>
+        <Version>6.5.0.1</Version>
+        <Authors>Christian Kapplmüller, Albilaga</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
-        <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+        <PackageLicensePath>..\LICENSE</PackageLicensePath>
     </PropertyGroup>
-    <ItemGroup>
-        <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.2.0" />
-    </ItemGroup>
     <ItemGroup>
         <ProjectReference
             Include="..\Tonestro.Maui.RevenueCat.Android.Core.Public\Tonestro.Maui.RevenueCat.Android.Core.Public.csproj" />

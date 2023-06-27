@@ -10,10 +10,10 @@
         <PackageId>Tonestro.Maui.RevenueCat.Android.Store.Google</PackageId>
         <Version>6.5.0.1</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
-        <Authors>Christian Kapplmüller</Authors>
+        <Authors>Christian Kapplmüller, Albiaga</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
-        <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+        <PackageLicensePath>..\LICENSE</PackageLicensePath>
     </PropertyGroup>
     <ItemGroup>
         <LibraryProjectZip Include="Jars\purchases-store-google-6.5.0.aar" />
