@@ -1,22 +1,8 @@
 ﻿<metadata>
 
     <remove-node path="//implements[@name='android.os.Parcelable.Creator']"/>
-    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]"
-          name="visibility">protected
+    <remove-node path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']"/>
+    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonStoreProduct']/method[@name='getPurchasingData' and count(parameter)=0]"
+          name="managedReturn">Com.Revenuecat.Purchases.Models.IPurchasingData
     </attr>
-    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]"
-          name="managedOverride">override
-    </attr>
-    <!--    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']/method[@name='findMatchingProduct' and count(parameter)=2]">-->
-    <!--        <attribute name="override">true</attribute>-->
-    <!--        <attribute name="visibility">public</attribute>-->
-    <!--    </attr>-->
-    <!--    <type fullname="Com.Revenuecat.Purchases.Amazon.AmazonOfferingParser">-->
-    <!--        <method-->
-    <!--                name="FindMatchingProduct"-->
-    <!--                abstract="false"-->
-    <!--                virtual="false"-->
-    <!--                access="public"-->
-    <!--                override="true" />-->
-    <!--    </type>-->
 </metadata>
