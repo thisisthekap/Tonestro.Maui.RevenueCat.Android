@@ -8,19 +8,19 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.RevenueCat.Android.Core.Strings</PackageId>
-        <Version>5.3.0.1</Version>
+        <Version>6.5.0.1</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
-        <Authors>Christian Kapplmüller</Authors>
+        <Authors>Christian Kapplmüller, Albilaga</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
-        <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+        <PackageLicensePath>..\LICENSE</PackageLicensePath>
     </PropertyGroup>
     <ItemGroup>
-        <LibraryProjectZip Include="Jars\purchases-core-strings-5.3.0.aar" />
-        <JavaSourceJar Include="Jars\purchases-core-strings-5.3.0-sources.jar" />
+        <LibraryProjectZip Include="Jars\purchases-core-strings-6.5.0.aar" />
+        <JavaSourceJar Include="Jars\purchases-core-strings-6.5.0-sources.jar" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="org.jetbrains.kotlin.kotlin.parcelize.runtime" Version="1.5.20.1" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.4.32.1" />
+        <PackageReference Include="Tonestro.Maui.Kotlin.Parcelize.Runtime" Version="1.6.21.2" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib" Version="1.7.0" />
     </ItemGroup>
 </Project>
