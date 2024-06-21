@@ -1,23 +1,21 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net7.0-android</TargetFramework>
-        <SupportedOSPlatformVersion>31</SupportedOSPlatformVersion>
-        <Nullable>disable</Nullable>
-        <ImplicitUsings>disable</ImplicitUsings>
+        <TargetFramework>net8.0-android</TargetFramework>
+        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
-    <PropertyGroup>
-        <IsPackable>true</IsPackable>
-        <PackageId>Tonestro.Maui.RevenueCat.Android.Extensions</PackageId>
-        <Description>Contains convenience methods and async extensions for Xamarin.RevenueCat.Android</Description>
-        <Version>6.5.0.1</Version>
-        <Authors>Christian Kapplmüller, Albilaga</Authors>
-        <Company>fun.music IT GmbH</Company>
-        <PackageOutputPath>nugetoutput</PackageOutputPath>
-        <PackageLicensePath>..\LICENSE</PackageLicensePath>
-    </PropertyGroup>
-    <ItemGroup>
-        <ProjectReference
-            Include="..\Tonestro.Maui.RevenueCat.Android.Core.Public\Tonestro.Maui.RevenueCat.Android.Core.Public.csproj" />
-        <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android\Tonestro.Maui.RevenueCat.Android.csproj" />
-    </ItemGroup>
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <PackageId>Tonestro.Maui.RevenueCat.Android.Extensions</PackageId>
+    <Description>Contains convenience methods and async extensions for Tonestro.Maui.RevenueCat.Android</Description>
+    <Version>7.0.1.4</Version>
+    <Authors>Christian Kapplmüller</Authors>
+    <Company>fun.music IT GmbH</Company>
+    <PackageOutputPath>nugetoutput</PackageOutputPath>
+    <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tonestro.Maui.RevenueCat.Android\Tonestro.Maui.RevenueCat.Android.csproj" />
+  </ItemGroup>
 </Project>

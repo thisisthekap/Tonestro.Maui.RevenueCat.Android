@@ -1,6 +1,6 @@
 # Tonestro.Maui.RevenueCat.Android
 
-.NET 7 Android (MAUI) Bindings for RevenueCat ([Website](https://www.revenuecat.com/), [Setup Instructions](+)).
+.NET 8 Android (MAUI) Bindings for RevenueCat ([Website](https://www.revenuecat.com/), [Setup Instructions](+)).
 
 ## About this Repository
 

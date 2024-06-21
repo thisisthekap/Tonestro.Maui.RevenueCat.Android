@@ -1,29 +1,24 @@
-using System;
-using System.Threading;
-using System.Threading.Tasks;
+namespace Tonestro.Maui.RevenueCat.Android.Extensions.Util;
 
-namespace Tonestro.Maui.RevenueCat.Android.Extensions.Util
+public abstract class DelegatingListenerBase<TResult> : Java.Lang.Object
 {
-    public abstract class DelegatingListenerBase<TResult> : Java.Lang.Object
+    private readonly TaskCompletionSource<TResult> _taskCompletionSource;
+
+    public DelegatingListenerBase(CancellationToken cancellationToken)
     {
-        private readonly TaskCompletionSource<TResult> _taskCompletionSource;
+        _taskCompletionSource = new TaskCompletionSource<TResult>();
+        cancellationToken.Register(() => _taskCompletionSource.TrySetCanceled());
+    }
 
-        public DelegatingListenerBase(CancellationToken cancellationToken)
-        {
-            _taskCompletionSource = new TaskCompletionSource<TResult>();
-            cancellationToken.Register(() => _taskCompletionSource.TrySetCanceled());
-        }
+    public Task<TResult> Task => _taskCompletionSource.Task;
 
-        public Task<TResult> Task => _taskCompletionSource.Task;
+    protected void ReportSuccess(TResult result)
+    {
+        _taskCompletionSource.TrySetResult(result);
+    }
 
-        protected void ReportSuccess(TResult result)
-        {
-            _taskCompletionSource.TrySetResult(result);
-        }
-
-        protected void ReportException(Exception exception)
-        {
-            _taskCompletionSource.TrySetException(exception);
-        }
+    protected void ReportException(Exception exception)
+    {
+        _taskCompletionSource.TrySetException(exception);
     }
 }

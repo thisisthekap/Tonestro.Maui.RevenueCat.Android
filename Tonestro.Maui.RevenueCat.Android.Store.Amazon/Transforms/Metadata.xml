@@ -1,8 +1,0 @@
-﻿<metadata>
-
-    <remove-node path="//implements[@name='android.os.Parcelable.Creator']"/>
-    <remove-node path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonOfferingParser']"/>
-    <attr path="/api/package[@name='com.revenuecat.purchases.amazon']/class[@name='AmazonStoreProduct']/method[@name='getPurchasingData' and count(parameter)=0]"
-          name="managedReturn">Com.Revenuecat.Purchases.Models.IPurchasingData
-    </attr>
-</metadata>

@@ -3,27 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android", "Tonestro.Maui.RevenueCat.Android\Tonestro.Maui.RevenueCat.Android.csproj", "{74E88AE6-9808-4617-BE22-C065C8DB2E01}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android", "Tonestro.Maui.RevenueCat.Android\Tonestro.Maui.RevenueCat.Android.csproj", "{0D8E01C7-AA21-40C1-B329-0FDE3125D3D0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Core.Common", "Tonestro.Maui.RevenueCat.Android.Core.Common\Tonestro.Maui.RevenueCat.Android.Core.Common.csproj", "{F00A90D7-11FA-449E-BFAE-BDFC4BC12EDD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Extensions", "Tonestro.Maui.RevenueCat.Android.Extensions\Tonestro.Maui.RevenueCat.Android.Extensions.csproj", "{5A98518F-71FF-4E57-8B77-6F17BA649F81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity", "Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity\Tonestro.Maui.RevenueCat.Android.Core.Feature.Identity.csproj", "{F7B9F9ED-2C40-4895-B273-AC3A3F8B4BAD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes", "Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes\Tonestro.Maui.RevenueCat.Android.Core.Feature.Subscriber.Attributes.csproj", "{72E0A5C9-3591-4115-BCC7-2D99A841B7D9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Core.Public", "Tonestro.Maui.RevenueCat.Android.Core.Public\Tonestro.Maui.RevenueCat.Android.Core.Public.csproj", "{A78BC746-1415-41CC-83C1-5EF315766448}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Core.Strings", "Tonestro.Maui.RevenueCat.Android.Core.Strings\Tonestro.Maui.RevenueCat.Android.Core.Strings.csproj", "{E03A6132-72B3-4B34-81A9-3B97CC3888EE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Core.Utils", "Tonestro.Maui.RevenueCat.Android.Core.Utils\Tonestro.Maui.RevenueCat.Android.Core.Utils.csproj", "{B5C8234D-C725-4362-B918-E37C598C36E4}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Extensions", "Tonestro.Maui.RevenueCat.Android.Extensions\Tonestro.Maui.RevenueCat.Android.Extensions.csproj", "{9DC8D194-54AF-4C34-85CA-CCA0A06B2F05}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Store.Amazon", "Tonestro.Maui.RevenueCat.Android.Store.Amazon\Tonestro.Maui.RevenueCat.Android.Store.Amazon.csproj", "{A533676B-9BB0-4633-8A1A-63FD3CD774DD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.Store.Google", "Tonestro.Maui.RevenueCat.Android.Store.Google\Tonestro.Maui.RevenueCat.Android.Store.Google.csproj", "{A02BE8DC-4DBD-4217-9A38-7D772ACDD2CF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.UsageChecker", "Tonestro.Maui.RevenueCat.Android.UsageChecker\Tonestro.Maui.RevenueCat.Android.UsageChecker.csproj", "{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tonestro.Maui.RevenueCat.Android.UsageChecker", "Tonestro.Maui.RevenueCat.Android.UsageChecker\Tonestro.Maui.RevenueCat.Android.UsageChecker.csproj", "{D2527E26-1161-4928-947C-F5F0E6ED603E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -34,49 +18,17 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74E88AE6-9808-4617-BE22-C065C8DB2E01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74E88AE6-9808-4617-BE22-C065C8DB2E01}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74E88AE6-9808-4617-BE22-C065C8DB2E01}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74E88AE6-9808-4617-BE22-C065C8DB2E01}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F00A90D7-11FA-449E-BFAE-BDFC4BC12EDD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F00A90D7-11FA-449E-BFAE-BDFC4BC12EDD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F00A90D7-11FA-449E-BFAE-BDFC4BC12EDD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F00A90D7-11FA-449E-BFAE-BDFC4BC12EDD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F7B9F9ED-2C40-4895-B273-AC3A3F8B4BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F7B9F9ED-2C40-4895-B273-AC3A3F8B4BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F7B9F9ED-2C40-4895-B273-AC3A3F8B4BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F7B9F9ED-2C40-4895-B273-AC3A3F8B4BAD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{72E0A5C9-3591-4115-BCC7-2D99A841B7D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72E0A5C9-3591-4115-BCC7-2D99A841B7D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72E0A5C9-3591-4115-BCC7-2D99A841B7D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72E0A5C9-3591-4115-BCC7-2D99A841B7D9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A78BC746-1415-41CC-83C1-5EF315766448}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A78BC746-1415-41CC-83C1-5EF315766448}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A78BC746-1415-41CC-83C1-5EF315766448}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A78BC746-1415-41CC-83C1-5EF315766448}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E03A6132-72B3-4B34-81A9-3B97CC3888EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E03A6132-72B3-4B34-81A9-3B97CC3888EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E03A6132-72B3-4B34-81A9-3B97CC3888EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E03A6132-72B3-4B34-81A9-3B97CC3888EE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5C8234D-C725-4362-B918-E37C598C36E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5C8234D-C725-4362-B918-E37C598C36E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5C8234D-C725-4362-B918-E37C598C36E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5C8234D-C725-4362-B918-E37C598C36E4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9DC8D194-54AF-4C34-85CA-CCA0A06B2F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9DC8D194-54AF-4C34-85CA-CCA0A06B2F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9DC8D194-54AF-4C34-85CA-CCA0A06B2F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9DC8D194-54AF-4C34-85CA-CCA0A06B2F05}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A533676B-9BB0-4633-8A1A-63FD3CD774DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A533676B-9BB0-4633-8A1A-63FD3CD774DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A533676B-9BB0-4633-8A1A-63FD3CD774DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A533676B-9BB0-4633-8A1A-63FD3CD774DD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A02BE8DC-4DBD-4217-9A38-7D772ACDD2CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A02BE8DC-4DBD-4217-9A38-7D772ACDD2CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A02BE8DC-4DBD-4217-9A38-7D772ACDD2CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A02BE8DC-4DBD-4217-9A38-7D772ACDD2CF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{265B7E41-C28A-4EB4-95F8-9C2B743F84C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8E01C7-AA21-40C1-B329-0FDE3125D3D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8E01C7-AA21-40C1-B329-0FDE3125D3D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8E01C7-AA21-40C1-B329-0FDE3125D3D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8E01C7-AA21-40C1-B329-0FDE3125D3D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A98518F-71FF-4E57-8B77-6F17BA649F81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A98518F-71FF-4E57-8B77-6F17BA649F81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A98518F-71FF-4E57-8B77-6F17BA649F81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A98518F-71FF-4E57-8B77-6F17BA649F81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2527E26-1161-4928-947C-F5F0E6ED603E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2527E26-1161-4928-947C-F5F0E6ED603E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2527E26-1161-4928-947C-F5F0E6ED603E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2527E26-1161-4928-947C-F5F0E6ED603E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
