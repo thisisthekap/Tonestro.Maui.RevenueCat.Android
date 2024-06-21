@@ -32,13 +32,19 @@ steps:
   displayName: "Tonestro.Maui.RevenueCat.Android.Extensions: Build Release Nuget"
 
 - bash: |
+    ./copy-nugets.sh
+  displayName: "Copy nugets to nugetoutput folder"
+
+- bash: |
+    cd local-nugets
+    cp ../nugetoutput/Tonestro.Maui.RevenueCat.Android.*.nupkg .
+    cd ..
+  displayName: copy nugets to local-nugets
+
+- bash: |
     cd Xamarin.RevenueCat.Android.UsageChecker
     dotnet build
   displayName: Build UsageChecker
-
-- bash: |
-    ./copy-nugets.sh
-  displayName: "Copy nugets to nugetoutput folder"
 
 - task: PublishBuildArtifacts@1
   displayName: publish nugetoutput
