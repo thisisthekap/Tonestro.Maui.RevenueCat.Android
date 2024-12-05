@@ -9,12 +9,16 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.RevenueCat.Android</PackageId>
-        <Version>7.0.1.7</Version>
+        <Version>7.0.1.8</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
-        <Authors>Christian Kapplmüller</Authors>
+        <Authors>Christian Kapplmüller, Albilaga Linggra Pradana</Authors>
         <Company>fun.music IT GmbH</Company>
         <PackageOutputPath>nugetoutput</PackageOutputPath>
         <PackageLicensePath>..\..\..\LICENSE.txt</PackageLicensePath>
+        <IncludeSymbols>true</IncludeSymbols>
+        <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+        <EmbedAllSources>true</EmbedAllSources>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
         <PackageReference Include="Tonestro.Maui.Kotlin.Parcelize.Runtime" Version="1.7.21.4" />
