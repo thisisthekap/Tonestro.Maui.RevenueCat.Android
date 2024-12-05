@@ -2,54 +2,53 @@ pr:
   - master
 
 pool:
-  vmImage: 'macOS-13'
+  vmImage: "macOS-15"
 
 steps:
+  - task: UseDotNet@2
+    inputs:
+      packageType: "sdk"
+      useGlobalJson: true
 
-- task: UseDotNet@2
-  inputs:
-    packageType: 'sdk'
-    useGlobalJson: true
+  - bash: |
+      echo "##vso[build.updatebuildnumber]pullrequests-xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
+    displayName: Set Build Number
 
-- bash: |
-    echo "##vso[build.updatebuildnumber]pullrequests-xamarin-revenuecat-android-$(Build.SourceBranchName)-$(Build.BuildId)"
-  displayName: Set Build Number
+  - bash: |
+      sudo dotnet workload restore
+    displayName: Restore workloads
 
-- bash: |
-    sudo dotnet workload restore
-  displayName: Restore workloads
+  - bash: |
+      cd Tonestro.Maui.RevenueCat.Android
+      dotnet build -c Release
+      dotnet pack -c Release
+    displayName: "Tonestro.Maui.RevenueCat.Android: Build Release Nuget"
 
-- bash: |
-    cd Tonestro.Maui.RevenueCat.Android
-    dotnet build -c Release
-    dotnet pack -c Release
-  displayName: "Tonestro.Maui.RevenueCat.Android: Build Release Nuget"
+  - bash: |
+      cd Tonestro.Maui.RevenueCat.Android.Extensions
+      dotnet build -c Release
+      dotnet pack -c Release
+    displayName: "Tonestro.Maui.RevenueCat.Android.Extensions: Build Release Nuget"
 
-- bash: |
-    cd Tonestro.Maui.RevenueCat.Android.Extensions
-    dotnet build -c Release
-    dotnet pack -c Release
-  displayName: "Tonestro.Maui.RevenueCat.Android.Extensions: Build Release Nuget"
+  - bash: |
+      ./copy-nugets.sh
+    displayName: "Copy nugets to nugetoutput folder"
 
-- bash: |
-    ./copy-nugets.sh
-  displayName: "Copy nugets to nugetoutput folder"
+  - bash: |
+      cd local-nugets
+      cp ../nugetoutput/Tonestro.Maui.RevenueCat.Android.*.nupkg .
+      cd ..
+    displayName: copy nugets to local-nugets
 
-- bash: |
-    cd local-nugets
-    cp ../nugetoutput/Tonestro.Maui.RevenueCat.Android.*.nupkg .
-    cd ..
-  displayName: copy nugets to local-nugets
+  - bash: |
+      cd Xamarin.RevenueCat.Android.UsageChecker
+      dotnet build
+    displayName: Build UsageChecker
 
-- bash: |
-    cd Xamarin.RevenueCat.Android.UsageChecker
-    dotnet build
-  displayName: Build UsageChecker
-
-- task: PublishBuildArtifacts@1
-  displayName: publish nugetoutput
-  inputs:
-    PathtoPublish: 'nugetoutput'
-    ArtifactName: 'nugetoutput'
-    publishLocation: 'Container'
-    StoreAsTar: true
+  - task: PublishBuildArtifacts@1
+    displayName: publish nugetoutput
+    inputs:
+      PathtoPublish: "nugetoutput"
+      ArtifactName: "nugetoutput"
+      publishLocation: "Container"
+      StoreAsTar: true
