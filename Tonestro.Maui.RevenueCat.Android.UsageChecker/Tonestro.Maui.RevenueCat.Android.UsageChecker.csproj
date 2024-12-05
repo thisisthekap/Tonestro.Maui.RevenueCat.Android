@@ -14,8 +14,8 @@
         <PackageReference Include="Xamarin.Google.Android.Material" Version="1.11.0" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Tonestro.Maui.RevenueCat.Android" Version="7.0.1.7" />
-        <PackageReference Include="Tonestro.Maui.RevenueCat.Android.Extensions" Version="7.0.1.7" />
+        <PackageReference Include="Tonestro.Maui.RevenueCat.Android" Version="7.0.1.8" />
+        <PackageReference Include="Tonestro.Maui.RevenueCat.Android.Extensions" Version="7.0.1.8" />
     </ItemGroup>
   <ItemGroup>
   </ItemGroup>
