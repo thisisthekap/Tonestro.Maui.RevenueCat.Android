@@ -9,7 +9,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>Tonestro.Maui.RevenueCat.Android.Extensions</PackageId>
     <Description>Contains convenience methods and async extensions for Tonestro.Maui.RevenueCat.Android</Description>
-    <Version>9.2.0.3</Version>
+    <Version>9.2.0.4</Version>
     <Authors>Christian Kapplmüller, Albilaga Linggra Pradana</Authors>
     <Company>fun.music IT GmbH</Company>
     <PackageOutputPath>nugetoutput</PackageOutputPath>
