@@ -10,12 +10,12 @@
         <ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="118.3.0.2" />
+        <PackageReference Include="Xamarin.GooglePlayServices.Basement" Version="118.7.1" />
         <PackageReference Include="Xamarin.Google.Android.Material" Version="1.11.0" />
     </ItemGroup>
     <ItemGroup>
-        <PackageReference Include="Tonestro.Maui.RevenueCat.Android" Version="7.0.1.8" />
-        <PackageReference Include="Tonestro.Maui.RevenueCat.Android.Extensions" Version="7.0.1.8" />
+        <PackageReference Include="Tonestro.Maui.RevenueCat.Android" Version="9.2.0.2" />
+        <PackageReference Include="Tonestro.Maui.RevenueCat.Android.Extensions" Version="9.2.0.2" />
     </ItemGroup>
   <ItemGroup>
   </ItemGroup>
