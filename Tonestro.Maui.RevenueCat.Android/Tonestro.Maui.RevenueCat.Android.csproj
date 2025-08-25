@@ -9,7 +9,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.RevenueCat.Android</PackageId>
-        <Version>9.2.0.5</Version>
+        <Version>9.3.0.6</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
         <Authors>Christian Kapplmüller, Albilaga Linggra Pradana</Authors>
         <Company>fun.music IT GmbH</Company>
@@ -30,18 +30,19 @@
         <PackageReference Include="Xamarin.AndroidX.Lifecycle.Runtime" Version="2.9.1" />
         <PackageReference Include="Xamarin.Google.Crypto.Tink.Android" Version="1.8.0.1" />
         <PackageReference Include="Xamarin.GooglePlayServices.Ads.Identifier" Version="117.0.1.5" />
-        <PackageReference Include="Xamarin.Kotlin.Parcelize.Runtime" Version="2.0.21.4" />
-        <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="2.0.21.4" />
+        <PackageReference Include="Xamarin.Kotlin.Parcelize.Runtime" Version="2.2.0.1" />
+        <PackageReference Include="Xamarin.Kotlin.StdLib.Jdk8" Version="2.2.0.1" />
         <PackageReference Include="Xamarin.KotlinX.Coroutines.Core" Version="1.10.2" />
-        <PackageReference Include="Xamarin.KotlinX.Serialization.Json" Version="1.7.3.5" />
+        <PackageReference Include="Xamarin.KotlinX.Serialization.Core" Version="1.8.1" />
+        <PackageReference Include="Xamarin.KotlinX.Serialization.Json" Version="1.8.1" />
     </ItemGroup>
     <ItemGroup>
-        <AndroidLibrary Include="Jars\purchases-9.2.0.aar">
+        <AndroidLibrary Include="Jars\purchases-9.3.0.aar">
             <Bind>true</Bind>
             <Pack>true</Pack>
         </AndroidLibrary>
     </ItemGroup>
     <ItemGroup>
-        <JavaSourceJar Include="Jars\purchases-9.2.0-sources.jar" />
+        <JavaSourceJar Include="Jars\purchases-9.3.0-sources.jar" />
     </ItemGroup>
 </Project>

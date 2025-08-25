@@ -25,4 +25,6 @@
           name="visibility">public
     </attr>
 
+    <remove-node path="//class[contains(@jni-signature, '$WhenMappings;')]" />
+
 </metadata>
