@@ -50,12 +50,34 @@ public static class PurchasesExtensions
     }
 
     public static Task<PurchaseSuccessInfo> PurchaseAsync(this Purchases purchases, Activity activity,
-        Package packageToPurchase, CancellationToken cancellationToken = default)
+        Package packageToPurchase, RCGoogleReplacementMode? googleReplacementMode = null,
+        CancellationToken cancellationToken = default)
     {
         var listener = new DelegatingMakePurchaseListener(cancellationToken);
-        var purchaseParams = new PurchaseParams(new PurchaseParams.Builder(activity, packageToPurchase));
+        var builder = new PurchaseParams.Builder(activity, packageToPurchase);
+
+        var nativeGoogleReplacementMode = ConvertGoogleReplacementMode(googleReplacementMode);
+        if (nativeGoogleReplacementMode != null)
+        {
+            builder.GoogleReplacementMode(nativeGoogleReplacementMode);
+        }
+
+        var purchaseParams = new PurchaseParams(builder);
         purchases.Purchase(purchaseParams, listener);
         return listener.Task;
+    }
+
+    private static GoogleReplacementMode? ConvertGoogleReplacementMode(RCGoogleReplacementMode? googleReplacementMode)
+    {
+        return googleReplacementMode switch
+        {
+            RCGoogleReplacementMode.ChargeFullPrice => GoogleReplacementMode.ChargeFullPrice,
+            RCGoogleReplacementMode.ChargeProratedPrice => GoogleReplacementMode.ChargeProratedPrice,
+            RCGoogleReplacementMode.Deferred => GoogleReplacementMode.Deferred,
+            RCGoogleReplacementMode.WithoutProration => GoogleReplacementMode.WithoutProration,
+            RCGoogleReplacementMode.WithTimeProration => GoogleReplacementMode.WithTimeProration,
+            _ => null
+        };
     }
 
     public static Task<CustomerInfo> RestorePurchasesAsync(this Purchases purchases,
