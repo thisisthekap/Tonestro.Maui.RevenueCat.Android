@@ -50,10 +50,18 @@ public static class PurchasesExtensions
     }
 
     public static Task<PurchaseSuccessInfo> PurchaseAsync(this Purchases purchases, Activity activity,
-        Package packageToPurchase, CancellationToken cancellationToken = default)
+        Package packageToPurchase, GoogleReplacementMode? googleReplacementMode = null,
+        CancellationToken cancellationToken = default)
     {
         var listener = new DelegatingMakePurchaseListener(cancellationToken);
-        var purchaseParams = new PurchaseParams(new PurchaseParams.Builder(activity, packageToPurchase));
+        var builder = new PurchaseParams.Builder(activity, packageToPurchase);
+
+        if (googleReplacementMode != null)
+        {
+            builder.GoogleReplacementMode(googleReplacementMode);
+        }
+
+        var purchaseParams = new PurchaseParams(builder);
         purchases.Purchase(purchaseParams, listener);
         return listener.Task;
     }
