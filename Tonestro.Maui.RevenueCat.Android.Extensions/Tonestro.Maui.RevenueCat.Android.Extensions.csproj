@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <TargetFramework>net8.0-android</TargetFramework>
-        <SupportedOSPlatformVersion>21</SupportedOSPlatformVersion>
+        <TargetFrameworks>net9.0-android35.0;net10.0-android36.0</TargetFrameworks>
+        <SupportedOSPlatformVersion>23</SupportedOSPlatformVersion>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
     </PropertyGroup>
@@ -9,7 +9,7 @@
     <IsPackable>true</IsPackable>
     <PackageId>Tonestro.Maui.RevenueCat.Android.Extensions</PackageId>
     <Description>Contains convenience methods and async extensions for Tonestro.Maui.RevenueCat.Android</Description>
-    <Version>9.3.0.10</Version>
+    <Version>10.14.1.1</Version>
     <Authors>Christian Kapplmüller, Albilaga Linggra Pradana</Authors>
     <Company>fun.music IT GmbH</Company>
     <PackageOutputPath>nugetoutput</PackageOutputPath>

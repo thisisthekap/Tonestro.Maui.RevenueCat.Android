@@ -2,8 +2,6 @@
 <metadata>
 
     <remove-node
-            path="api/package[@name='com.revenuecat.purchases']/interface[@name='ProrationMode']/method[@name='getName']"/>
-    <remove-node
             path="api/package[@name='com.revenuecat.purchases']/interface[@name='ReplacementMode']/method[@name='getName']"/>
     <remove-node
             path="//field[@final='true' and @name='CREATOR' and @jni-signature='Landroid/os/Parcelable$Creator;' and @static='true' and @type='android.os.Parcelable.Creator']"/>
