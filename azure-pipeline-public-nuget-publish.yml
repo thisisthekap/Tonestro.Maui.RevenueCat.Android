@@ -63,6 +63,8 @@ steps:
       tagSource: "userSpecifiedTag"
       tag: "$(Build.SourceBranchName)"
       title: "Tonestro.Maui.RevenueCat.Android $(bindingsVersion)"
-      assets: "nugetoutput/Tonestro.Maui.RevenueCat.Android.*.nupkg"
+      assets: |
+        nugetoutput/Tonestro.Maui.RevenueCat.Android.*.nupkg
+        nugetoutput/Tonestro.Maui.RevenueCat.Android.*.snupkg
       changeLogCompareToRelease: "lastFullRelease"
       changeLogType: "issueBased"
