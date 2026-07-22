@@ -16,12 +16,15 @@ public class MainActivity : Activity
         Purchases.Configure(new PurchasesConfiguration.Builder(this, "apikey").Build());
         string revenueCatVersion = Purchases.FrameworkVersion;
 
-        var txtRevenueCatVersion = FindViewById<TextView>(Resource.Id.txtRevenueCatVersion);
-
-        var txtAdjustNetwork = FindViewById<TextView>(Resource.Id.txtAdjustNetwork);
+        var txtRevenueCatVersion = FindViewById<TextView>(Resource.Id.txtRevenueCatVersion)!;
+        var txtAdjustNetwork = FindViewById<TextView>(Resource.Id.txtAdjustNetwork)!;
+        var txtAppUserId = FindViewById<TextView>(Resource.Id.txtAppUserId)!;
 
         txtRevenueCatVersion.Text = $"RevenueCat {revenueCatVersion}";
 
-        txtAdjustNetwork.Text = ReservedSubscriberAttribute.AdjustId.Value;
+        txtAdjustNetwork.Text = $"AdjustId attribute: {ReservedSubscriberAttribute.AdjustId.Value}";
+
+        // Calls through the binding into the configured SDK instance at runtime.
+        txtAppUserId.Text = $"AppUserID: {Purchases.SharedInstance.AppUserID}";
     }
 }
