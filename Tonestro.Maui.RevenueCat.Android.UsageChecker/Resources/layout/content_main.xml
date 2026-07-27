@@ -5,6 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center"
+    android:padding="24dp"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:showIn="@layout/activity_main">
 
@@ -12,13 +14,22 @@
         android:id="@+id/txtRevenueCatVersion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:textSize="20sp"
         android:text="no data" />
 
     <TextView
         android:id="@+id/txtAdjustNetwork"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        android:text="no data" />
+
+    <TextView
+        android:id="@+id/txtAppUserId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
         android:text="no data" />
 </LinearLayout>
