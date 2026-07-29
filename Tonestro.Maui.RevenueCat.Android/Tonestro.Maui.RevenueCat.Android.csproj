@@ -9,7 +9,7 @@
     <PropertyGroup>
         <IsPackable>true</IsPackable>
         <PackageId>Tonestro.Maui.RevenueCat.Android</PackageId>
-        <Version>10.14.1.1</Version>
+        <Version>10.14.1.2</Version>
         <Description>Contains bindings for https://docs.revenuecat.com/docs/android</Description>
         <Authors>Christian Kapplmüller, Albilaga Linggra Pradana</Authors>
         <Company>fun.music IT GmbH</Company>
@@ -21,7 +21,6 @@
         <PublishRepositoryUrl>true</PublishRepositoryUrl>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Dev.Drewhamilton.Poko.PokoAnnotations" Version="0.18.2" />
         <PackageReference Include="Xamarin.Android.Google.BillingClient" Version="8.3.0.2" />
         <PackageReference Include="Xamarin.AndroidX.Annotation" Version="1.10.0.1" />
         <PackageReference Include="Xamarin.AndroidX.Core.Core.Ktx" Version="1.19.0.1" />
